@@ -1,0 +1,58 @@
+@use "base"
+    
+header 
+    margin-top: 50px
+    display: flex
+    align-items: center
+    justify-content: center
+    font-family: 'Source Sans Pro', sans-serif
+
+    nav
+        ul 
+            display: flex
+            list-style: none
+            padding: 0
+            margin: 0
+        
+            li
+                font-size: 20px    
+                opacity: 0.5
+                transition-property: opacity, transform
+                transition-duration: 0.2s
+                transition-timing-function: ease-in-out     
+
+                &:hover
+                    opacity: 1
+                    transform: scale(1.1)
+
+
+                &.wrapper-logo
+                    border-bottom: none
+                    opacity: 1
+
+                &:nth-child(1)
+                    opacity: 1
+            
+                a
+                    display: block
+                    height: 40px
+                    text-decoration: none
+                    color: base.$color_white
+
+                    .text-wraper
+                        margin: 0 40px
+                        padding-top: 10px
+                        border-bottom: 1px solid white
+
+                        span
+                            font-size: 20px
+                            display: block
+                            margin-bottom: 5px
+
+                figure
+                    height: 40px
+                    width: auto
+
+                    img
+                        height: 100%
+                        width: auto
