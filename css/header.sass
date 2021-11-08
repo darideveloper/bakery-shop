@@ -1,18 +1,28 @@
 @use "base"
     
 header 
-    margin-top: 50px
     display: flex
     align-items: center
     justify-content: center
     font-family: 'Source Sans Pro', sans-serif
+    width: 70%
+    margin: 0 auto
+    margin-top: 50px
+
 
     nav
+        width: 100%
+
         ul 
             display: flex
             list-style: none
             padding: 0
             margin: 0
+
+            .right, .left
+                display: flex
+                justify-content: space-between
+                width: 100%
         
             li
                 font-size: 20px    
@@ -30,7 +40,7 @@ header
                     border-bottom: none
                     opacity: 1
 
-                &:nth-child(1)
+                &.active
                     opacity: 1
             
                 a
@@ -38,9 +48,9 @@ header
                     height: 40px
                     text-decoration: none
                     color: base.$color_white
+                    padding: 0 25px
 
                     .text-wraper
-                        margin: 0 40px
                         padding-top: 10px
                         border-bottom: 1px solid white
 

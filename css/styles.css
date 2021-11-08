@@ -1,15 +1,25 @@
 header {
-  margin-top: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: "Source Sans Pro", sans-serif;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+header nav {
+  width: 100%;
 }
 header nav ul {
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
+}
+header nav ul .right, header nav ul .left {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 header nav ul li {
   font-size: 20px;
@@ -26,7 +36,7 @@ header nav ul li.wrapper-logo {
   border-bottom: none;
   opacity: 1;
 }
-header nav ul li:nth-child(1) {
+header nav ul li.active {
   opacity: 1;
 }
 header nav ul li a {
@@ -34,9 +44,9 @@ header nav ul li a {
   height: 40px;
   text-decoration: none;
   color: #f1f4f5;
+  padding: 0 25px;
 }
 header nav ul li a .text-wraper {
-  margin: 0 40px;
   padding-top: 10px;
   border-bottom: 1px solid white;
 }
