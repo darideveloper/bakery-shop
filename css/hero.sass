@@ -1,0 +1,109 @@
+@use 'base'
+    
+.hero
+    width: 100%
+    height: 800px
+    background: radial-gradient(circle, rgba(116,164,197,1) 0%, rgba(54,96,124,1) 100%)
+    display: flex
+    align-items: center
+    justify-content: center
+
+    .arrow
+        z-index: 4
+        cursor: pointer
+        height: 800px
+        position: absolute
+        top: 0
+        display: flex
+        justify-content: center
+        align-items: center
+        color: base.$color_white
+
+        figure
+            width: 50px
+            height: 50px
+
+            img
+                width: 100%
+                height: 100%
+
+    .wrapper-back
+        margin-left: 20px
+        left: 0
+
+    .wrapper-next
+        margin-right: 20px
+        right: 0
+        transform: rotate(180deg)
+
+    .cover
+        width: 100%
+        height: 100%
+
+        .cover_elem
+            position: absolute
+            width: 100%
+            height: 800px
+            left: 0
+            top: 0
+            display: flex
+            justify-content: center
+            align-items: center
+
+
+        .text
+            z-index: 2
+            font-family: 'Courgette', cursive
+            font-size: 80px
+            color: base.$color_white
+            text-align: center
+
+            p
+                text-shadow: 2px 2px 4px black
+            
+
+        .background
+            z-index: 1
+
+            figure
+                width: 400px
+                height: auto
+                opacity: 0.8
+            
+                img
+                    width: 100%
+                    height: 100%
+    
+    .wrapper-pagination
+        width: 100%
+        height: 800px
+        position: absolute
+        top: 0
+        left: 0
+
+        .pagination
+            z-index: 4
+            position: absolute
+            bottom: 0
+            left: 0
+            height: 100px
+            width: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+
+            .dot-wrapper
+                padding: 0 10px
+                cursor: pointer
+
+            .dot
+                border-radius: 50%
+                background-color: base.$color_white
+                width: 15px
+                height: 15px
+                opacity: 0.5
+                
+                &.active
+                    opacity: 1
+
+        

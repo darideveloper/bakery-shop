@@ -8,82 +8,123 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
     <title>Bakers</title>
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <div class="left">
-                    <li class="active">
+        <div class="nav-wrapper">
+            <nav>
+                <ul>
+                    <div class="left">
+                        <li class="active">
+                            <a href="">
+                                <div class="text-wraper">
+                                    <span>
+                                        MENU
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="text-wraper">
+                                    <span>
+                                        PAGES
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="text-wraper">
+                                    <span>
+                                        PORTFOLIO
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                    </div>
+                    <li class="wrapper-logo">
                         <a href="">
-                            <div class="text-wraper">
-                                <span>
-                                    MENU
-                                </span>
-                            </div>
+                            <figure class="logo">
+                                <img src="imgs/logo.png" alt="company logo">
+                            </figure>
                         </a>
                     </li>
-                    <li>
-                        <a href="">
-                            <div class="text-wraper">
-                                <span>
-                                    PAGES
-                                </span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div class="text-wraper">
-                                <span>
-                                    PORTFOLIO
-                                </span>
-                            </div>
-                        </a>
-                    </li>
-                </div>
-                <li class="wrapper-logo">
-                    <a href="">
-                        <figure class="logo">
-                            <img src="imgs/logo.png" alt="company logo">
-                        </figure>
-                    </a>
-                </li>
-                <div class="right">
-                    <li>
-                        <a href="">
-                            <div class="text-wraper">
-                                <span>
-                                    BLOG
-                                </span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div class="text-wraper">
-                                <span>
-                                    SHOP
-                                </span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div class="text-wraper">
-                                <span>
-                                    ELEMENTS
-                                </span>
-                            </div>
-                        </a>
-                    </li>
-                </div>
-            </ul>
-        </nav>
+                    <div class="right">
+                        <li>
+                            <a href="">
+                                <div class="text-wraper">
+                                    <span>
+                                        BLOG
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="text-wraper">
+                                    <span>
+                                        SHOP
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="text-wraper">
+                                    <span>
+                                        ELEMENTS
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
     </header>
+    <div class="hero">
+        <div class="wrapper-back arrow">
+            <figure>
+                <img src="./imgs/arrow.svg" alt="">
+            </figure>
+        </div>
+        <div class="wrapper-next arrow">
+            <figure>
+                <img src="./imgs/arrow.svg" alt="">
+            </figure>
+        </div>
+        <div class="cover">
+            <div class="text cover_elem">
+                <p>
+                    Baked fresh<br>Simply delicious
+                </p>
+            </div>
+            <div class="background cover_elem">
+                <figure>
+                    <img src="imgs/gallery 1.png" alt="">
+                </figure>
+            </div>
+        </div>
+        <div class="wrapper-pagination">
+            <div class="pagination">
+                <div class="dot-wrapper">
+                    <div class="dot"></div>
+                </div>
+                <div class="dot-wrapper">
+                    <div class="dot active"></div>
+                </div>
+                <div class="dot-wrapper">
+                    <div class="dot"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
