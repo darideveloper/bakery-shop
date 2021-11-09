@@ -106,6 +106,9 @@ header .nav-wrapper nav ul li figure img {
 .hero .wrapper-back:hover figure {
   transform: scale(1.2);
 }
+.hero .wrapper-back:active figure {
+  transform: scale(2);
+}
 .hero .wrapper-next {
   margin-right: 20px;
   right: 0;
@@ -136,9 +139,23 @@ header .nav-wrapper nav ul li figure img {
   font-size: 80px;
   color: #f1f4f5;
   text-align: center;
+  overflow: hidden;
 }
 .hero .cover .text p {
   text-shadow: 2px 2px 4px black;
+  display: none;
+  transition-duration: 0.3s;
+  transform: translateX(-100vw);
+}
+.hero .cover .text p.active {
+  display: block;
+  transform: translateX(0);
+}
+.hero .cover .text p.transition-next {
+  transform: translateX(-100vw);
+}
+.hero .cover .text p.transition-back {
+  transform: translateX(100vw);
 }
 .hero .cover .background {
   transition-duration: 0.5s;

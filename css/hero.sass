@@ -36,6 +36,10 @@
             figure
                 transform: scale(1.2)
 
+        &:active 
+            figure
+                transform: scale(2)
+
 
     .wrapper-next
         margin-right: 20px
@@ -69,9 +73,23 @@
             font-size: 80px
             color: base.$color_white
             text-align: center
+            overflow: hidden
 
             p
                 text-shadow: 2px 2px 4px black
+                display: none
+                transition-duration: 0.3s
+                transform: translateX(-100vw)
+
+                &.active
+                    display: block
+                    transform: translateX(0)
+
+                &.transition-next
+                    transform: translateX(-100vw)
+
+                &.transition-back
+                    transform: translateX(100vw)
             
 
         .background
