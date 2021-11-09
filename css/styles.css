@@ -141,7 +141,11 @@ header .nav-wrapper nav ul li figure img {
   text-shadow: 2px 2px 4px black;
 }
 .hero .cover .background {
+  transition-duration: 0.5s;
   z-index: 1;
+}
+.hero .cover .background.transition {
+  opacity: 0;
 }
 .hero .cover .background figure {
   width: 400px;
@@ -151,6 +155,10 @@ header .nav-wrapper nav ul li figure img {
 .hero .cover .background figure img {
   width: 100%;
   height: 100%;
+  display: none;
+}
+.hero .cover .background figure img.active {
+  display: block;
 }
 .hero .wrapper-pagination {
   width: 100%;
