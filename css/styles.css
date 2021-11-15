@@ -158,7 +158,7 @@ header .nav-wrapper nav ul li figure img {
   opacity: 0;
 }
 .hero .cover .background figure {
-  width: 400px;
+  width: 370px;
   height: auto;
   opacity: 0.8;
 }
@@ -237,6 +237,7 @@ header .nav-wrapper nav ul li figure img {
   border-radius: 50%;
   overflow: hidden;
   margin: 0 auto;
+  margin-bottom: 40px;
 }
 .about-wrapper .about section article figure img {
   height: auto;
