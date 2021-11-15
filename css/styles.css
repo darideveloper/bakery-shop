@@ -2,7 +2,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Source Sans Pro", sans-serif;
   margin: 0 auto;
   margin-top: 50px;
   position: absolute;
@@ -67,7 +66,6 @@ header .nav-wrapper nav ul li figure {
   width: auto;
 }
 header .nav-wrapper nav ul li figure img {
-  height: 100%;
   width: auto;
 }
 
@@ -94,10 +92,6 @@ header .nav-wrapper nav ul li figure img {
   transition-duration: 0.5s;
   width: 30px;
   height: 50px;
-}
-.hero .arrow figure img {
-  width: 100%;
-  height: 100%;
 }
 .hero .wrapper-back {
   margin-left: 20px;
@@ -135,7 +129,6 @@ header .nav-wrapper nav ul li figure img {
 }
 .hero .cover .text {
   z-index: 2;
-  font-family: "Courgette", cursive;
   font-size: 80px;
   color: #f1f4f5;
   text-align: center;
@@ -170,8 +163,6 @@ header .nav-wrapper nav ul li figure img {
   opacity: 0.8;
 }
 .hero .cover .background figure img {
-  width: 100%;
-  height: 100%;
   display: none;
 }
 .hero .cover .background figure img.active {
@@ -210,19 +201,73 @@ header .nav-wrapper nav ul li figure img {
   opacity: 1;
 }
 
+.about-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #f1f4f5;
+  padding: 1px 0;
+}
+.about-wrapper .about {
+  width: 70%;
+  margin: 0 auto;
+  color: #5c6972;
+  text-align: center;
+}
+.about-wrapper .about h2 {
+  width: 100%;
+  font-size: 30px;
+  margin: 30px 0;
+}
+.about-wrapper .about h2 + p {
+  font-size: 18px;
+  margin-bottom: 100px;
+}
+.about-wrapper .about section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.about-wrapper .about section article {
+  margin: 0 15px;
+}
+.about-wrapper .about section article figure {
+  width: 80%;
+  height: auto;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.about-wrapper .about section article figure img {
+  height: auto;
+}
+.about-wrapper .about section article h3 {
+  font-weight: bold;
+}
+
 body {
   background-color: #74a4c5;
   margin: 0;
   padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 figure {
   margin: 0;
   padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 figure img {
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  font-family: "Courgette", cursive;
 }
 
 /*# sourceMappingURL=styles.css.map */
