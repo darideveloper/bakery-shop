@@ -369,6 +369,137 @@ header .nav-wrapper nav ul li figure img {
   text-align: center;
 }
 
+footer {
+  background-color: #2c2c2c;
+  width: 100%;
+  color: #f1f4f5;
+  padding-top: 40px;
+}
+footer .wrapper-svg {
+  width: 15px;
+  height: 15px;
+}
+footer .wrapper-svg svg {
+  height: 100%;
+  width: 100%;
+}
+footer .grid {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  align-items: flex-start;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+footer .grid .grid-area > p:nth-child(1) {
+  font-weight: bold;
+}
+footer .grid .grid-area:nth-child(2), footer .grid .grid-area:nth-child(3) {
+  margin-top: 20px;
+}
+footer .grid .grid-area.socials .logo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 45px;
+}
+footer .grid .grid-area.socials .logo figure {
+  transform: rotate(-10deg);
+  width: 100%;
+  height: auto;
+}
+footer .grid .grid-area.socials .logo figure img {
+  height: auto;
+}
+footer .grid .grid-area.socials p {
+  margin: 20px 0;
+}
+footer .grid .grid-area.socials .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+}
+footer .grid .grid-area.socials .buttons p {
+  padding: 0;
+  margin: 0;
+}
+footer .grid .grid-area.socials .buttons a {
+  padding: 10px;
+}
+footer .grid .grid-area.tweets > p {
+  margin-left: 26px;
+}
+footer .grid .grid-area.tweets .tweet {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #f1f4f5;
+}
+footer .grid .grid-area.tweets .tweet p {
+  width: 75%;
+  margin: 0;
+  padding-right: 30px;
+}
+footer .grid .grid-area.form form {
+  font-size: 0;
+  margin: 40px 0;
+}
+footer .grid .grid-area.form form input {
+  text-align: center;
+  padding: 15px;
+  border: none;
+  outline: none;
+  margin: 0;
+}
+footer .grid .grid-area.form form input[type=submit] {
+  padding-right: 25px;
+  padding-left: 25px;
+  background-color: #9c7841;
+  transition-duration: 0.5s;
+}
+footer .grid .grid-area.form form input[type=submit]:hover {
+  box-shadow: 4px 4px 10px #161616;
+}
+footer .grid .grid-area.form hr {
+  opacity: 0.5;
+  width: 70%;
+  text-align: left;
+  margin: 0;
+}
+footer .grid .grid-area.form hr + p {
+  margin: 0;
+  margin-top: 10px;
+}
+footer .grid .grid-area.form hr + p a {
+  color: #9c7841;
+  text-decoration: none;
+}
+footer address {
+  width: 100%;
+  text-align: center;
+  background-color: #161616;
+  padding: 20px 0;
+  margin: 0;
+}
+footer address small {
+  line-height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer address small a {
+  margin-left: 8px;
+  text-decoration: none;
+  color: #9c7841;
+}
+footer address small .wrapper-svg {
+  display: inline-block;
+  margin: 5px;
+}
+
 body {
   background-color: #f1f4f5;
   margin: 0;
@@ -415,6 +546,10 @@ p.small {
 .button:active {
   box-shadow: 0px 0px 30px #36607c;
   font-weight: bold;
+}
+
+.svg_elem path {
+  fill: #9c7841;
 }
 
 /*# sourceMappingURL=styles.css.map */

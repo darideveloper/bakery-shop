@@ -1,0 +1,141 @@
+@use 'base'
+    
+footer
+    background-color: base.$color_gray_dark
+    width: 100%
+    color: base.$color_white
+    padding-top: 40px
+
+    .wrapper-svg
+        width: 15px
+        height: 15px
+
+        svg
+            height: 100%
+            width: 100%
+
+    .grid
+        width: 70%
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        gap: 30px
+        align-items: flex-start
+        margin: 0 auto
+        margin-bottom: 40px
+
+        .grid-area        
+            > p:nth-child(1)
+                font-weight: bold
+
+            &:nth-child(2), &:nth-child(3)
+                margin-top: 20px 
+
+            &.socials
+                
+                .logo
+                    width: 150px
+                    height: auto
+                    margin-bottom: 45px
+
+                    figure
+                        transform: rotate(-10deg)
+                        width: 100%
+                        height: auto
+
+                        img
+                            height: auto
+                
+                p
+                    margin: 20px 0
+
+                .buttons
+                    display: flex
+                    align-items: center
+                    justify-content: flex-start
+                    color: white
+
+                    p
+                        padding: 0
+                        margin: 0
+
+                    a
+                        padding: 10px
+
+            &.tweets
+                
+                > p
+                    margin-left: 26px
+
+                .tweet
+                    display: flex
+                    align-items: flex-start
+                    justify-content: space-around
+                    margin-bottom: 20px
+                    text-decoration: none
+                    color: base.$color_white
+
+                    p
+                        width: 75%
+                        margin: 0
+                        padding-right: 30px
+
+            &.form
+                p
+                    // margin-bottom: 20px
+
+                form
+                    font-size: 0
+                    margin: 40px 0
+                    input
+                        text-align: center
+                        padding: 15px
+                        border: none
+                        outline: none
+                        margin: 0
+
+
+                        &[type="submit"]
+                            padding-right: 25px
+                            padding-left: 25px
+                            background-color: base.$color_brown
+                            transition-duration: 0.5s
+
+                            &:hover
+                                box-shadow: 4px 4px 10px base.$color_black
+
+                hr
+                    opacity: 0.5
+                    width: 70%
+                    text-align: left
+                    margin: 0
+
+                hr + p
+                    margin: 0
+                    margin-top: 10px
+
+                    a
+                        color: base.$color_brown
+                        text-decoration: none
+    
+    address
+        width: 100%
+        text-align: center
+        background-color: base.$color_black
+        padding: 20px 0
+        margin: 0
+
+        small
+            line-height: 15px
+            display: flex
+            justify-content: center
+            align-items: center
+
+            a
+                margin-left: 8px
+                text-decoration: none
+                color: base.$color_brown
+
+            .wrapper-svg
+                display: inline-block
+                margin: 5px
+            
