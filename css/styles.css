@@ -314,16 +314,59 @@ header .nav-wrapper nav ul li figure img {
 }
 .percentage .background {
   position: absolute;
-  top: -13%;
-  right: 78vw;
+  top: -12%;
+  right: 77vw;
 }
 .percentage .background figure {
-  width: 300px;
+  width: 250px;
   height: auto;
-  transform: rotate(-45deg);
+  transform: rotate(-25deg);
 }
 .percentage .background figure img {
   height: auto;
+}
+
+.products-wrapper {
+  width: 100%;
+}
+.products-wrapper .products {
+  width: 70%;
+  margin: 0 auto;
+  color: #5c6972;
+}
+.products-wrapper .products h2 {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+.products-wrapper .products p {
+  text-align: center;
+}
+.products-wrapper .products section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 80px 0;
+  gap: 50px;
+}
+.products-wrapper .products section a {
+  text-decoration: none;
+  color: #5c6972;
+}
+.products-wrapper .products section a article:hover figure {
+  transform: scale(1.2);
+}
+.products-wrapper .products section a article figure {
+  transition-duration: 1s;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+.products-wrapper .products section a article figure img {
+  width: auto;
+}
+.products-wrapper .products section a article h3 {
+  width: 100%;
+  text-align: center;
 }
 
 body {

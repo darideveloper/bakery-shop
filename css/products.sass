@@ -1,0 +1,45 @@
+@use 'base'
+
+.products-wrapper
+    width: 100%
+
+    .products
+        width: 70%
+        margin: 0 auto
+        color: base.$color_gray
+
+        h2
+            width: 100%
+            text-align: center
+            margin-top: 50px
+        
+        p
+            text-align: center
+
+        section
+            display: grid
+            grid-template-columns: repeat(3, 1fr)
+            margin: 80px 0
+            gap: 50px
+
+            a
+                text-decoration: none
+                color: base.$color_gray
+
+
+                article
+                    
+                    &:hover figure
+                        transform: scale(1.2)
+
+                    figure
+                        transition-duration: 1s
+                        width: 150px
+                        height: 150px
+                        margin: 0 auto
+                        img
+                            width: auto
+
+                    h3
+                        width: 100%
+                        text-align: center
