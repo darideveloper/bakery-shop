@@ -6,7 +6,7 @@ header {
   margin-top: 50px;
   position: absolute;
   z-index: 3;
-  left: 0;
+  right: 0;
   top: 0;
   width: 100%;
 }
@@ -90,6 +90,8 @@ header .nav-wrapper nav ul li .wrapper-img img {
   color: #f1f4f5;
 }
 .hero .arrow .wrapper-img {
+  background: none;
+  border: none;
   transition-duration: 0.5s;
   width: 30px;
   height: 50px;
@@ -467,6 +469,9 @@ footer .grid .grid-area.form form input[type=submit] {
 }
 footer .grid .grid-area.form form input[type=submit]:hover {
   box-shadow: 4px 4px 10px #161616;
+}
+footer .grid .grid-area.form form input:focus {
+  border: 4px solid rgba(0, 0, 255, 0.5);
 }
 footer .grid .grid-area.form hr {
   opacity: 0.5;

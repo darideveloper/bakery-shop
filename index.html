@@ -67,7 +67,7 @@
                         </li>
                     </div>
                     <li class="wrapper-logo">
-                        <a href="index.html" class="wrapper-logo">
+                        <a href="index.html" class="wrapper-logo" tabindex="-1">
                             <div class="logo wrapper-img">
                                 <img src="imgs/logo.png" alt="Bakers logo">
                             </div>
@@ -102,16 +102,16 @@
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero" role="slider">
             <div class="wrapper-back arrow" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">
-                <div class="wrapper-img">
+                <button tabindex="0" class="wrapper-img">
                     <img src="./imgs/arrow.svg" alt="back button icon">
-                </div>
+                </button>
             </div>
             <div class="wrapper-next arrow" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000">
-                <div class="wrapper-img">
+                <button tabindex="0" class="wrapper-img">
                     <img src="./imgs/arrow.svg" alt="next button icon">
-                </div>
+                </button>
             </div>
             <div class="cover">
                 <div class="text cover_elem title" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="2000">
@@ -388,6 +388,8 @@
         </address>
     </footer>
     <script src="code/hero.js"></script>
+    <script src="code/inert.js"></script>
+    <script src="code/accessibility.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
