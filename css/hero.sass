@@ -19,7 +19,7 @@
         align-items: center
         color: base.$color_white
 
-        figure
+        .wrapper-img
             transition-duration: 0.5s
             width: 30px
             height: 50px
@@ -29,11 +29,11 @@
         left: 0
 
         &:hover
-            figure
+            .wrapper-img
                 transform: scale(1.2)
 
         &:active 
-            figure
+            .wrapper-img
                 transform: scale(2)
 
 
@@ -41,11 +41,11 @@
         margin-right: 20px
         right: 0
 
-        figure
+        .wrapper-img
             transform: rotate(180deg)
 
         &:hover
-            figure
+            .wrapper-img
                 transform: scale(1.2) rotate(180deg)
 
     .cover
@@ -94,7 +94,7 @@
             &.transition
                 opacity: 0
 
-            figure
+            .wrapper-img
                 width: 370px
                 height: auto
                 opacity: 0.8

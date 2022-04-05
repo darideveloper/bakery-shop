@@ -50,22 +50,23 @@ header .nav-wrapper nav ul li a {
   height: 40px;
   text-decoration: none;
   color: #f1f4f5;
-  padding: 0 25px;
-}
-header .nav-wrapper nav ul li a .text-wraper {
-  padding-top: 10px;
+  margin: 0 25px;
+  margin-top: 10px;
   border-bottom: 1px solid white;
 }
-header .nav-wrapper nav ul li a .text-wraper span {
+header .nav-wrapper nav ul li a.wrapper-logo {
+  border: none;
+}
+header .nav-wrapper nav ul li a span {
   font-size: 20px;
   display: block;
   margin-bottom: 5px;
 }
-header .nav-wrapper nav ul li figure {
+header .nav-wrapper nav ul li .wrapper-img {
   height: 40px;
   width: auto;
 }
-header .nav-wrapper nav ul li figure img {
+header .nav-wrapper nav ul li .wrapper-img img {
   width: auto;
 }
 
@@ -88,7 +89,7 @@ header .nav-wrapper nav ul li figure img {
   align-items: center;
   color: #f1f4f5;
 }
-.hero .arrow figure {
+.hero .arrow .wrapper-img {
   transition-duration: 0.5s;
   width: 30px;
   height: 50px;
@@ -97,20 +98,20 @@ header .nav-wrapper nav ul li figure img {
   margin-left: 20px;
   left: 0;
 }
-.hero .wrapper-back:hover figure {
+.hero .wrapper-back:hover .wrapper-img {
   transform: scale(1.2);
 }
-.hero .wrapper-back:active figure {
+.hero .wrapper-back:active .wrapper-img {
   transform: scale(2);
 }
 .hero .wrapper-next {
   margin-right: 20px;
   right: 0;
 }
-.hero .wrapper-next figure {
+.hero .wrapper-next .wrapper-img {
   transform: rotate(180deg);
 }
-.hero .wrapper-next:hover figure {
+.hero .wrapper-next:hover .wrapper-img {
   transform: scale(1.2) rotate(180deg);
 }
 .hero .cover {
@@ -157,15 +158,15 @@ header .nav-wrapper nav ul li figure img {
 .hero .cover .background.transition {
   opacity: 0;
 }
-.hero .cover .background figure {
+.hero .cover .background .wrapper-img {
   width: 370px;
   height: auto;
   opacity: 0.8;
 }
-.hero .cover .background figure img {
+.hero .cover .background .wrapper-img img {
   display: none;
 }
-.hero .cover .background figure img.active {
+.hero .cover .background .wrapper-img img.active {
   display: block;
 }
 .hero .wrapper-pagination {
@@ -228,7 +229,7 @@ header .nav-wrapper nav ul li figure img {
 .about-wrapper .about section article {
   margin: 0 15px;
 }
-.about-wrapper .about section article figure {
+.about-wrapper .about section article .wrapper-img {
   width: 80%;
   height: auto;
   border-radius: 50%;
@@ -236,7 +237,7 @@ header .nav-wrapper nav ul li figure img {
   margin: 0 auto;
   margin-bottom: 40px;
 }
-.about-wrapper .about section article figure img {
+.about-wrapper .about section article .wrapper-img img {
   height: auto;
 }
 .about-wrapper .about section article h3 {
@@ -318,12 +319,12 @@ header .nav-wrapper nav ul li figure img {
   top: -12%;
   right: 77vw;
 }
-.percentage .background figure {
+.percentage .background .wrapper-img {
   width: 250px;
   height: auto;
   transform: rotate(-25deg);
 }
-.percentage .background figure img {
+.percentage .background .wrapper-img img {
   height: auto;
 }
 
@@ -353,16 +354,16 @@ header .nav-wrapper nav ul li figure img {
   text-decoration: none;
   color: #5c6972;
 }
-.products-wrapper .products section a article:hover figure {
+.products-wrapper .products section a article:hover .wrapper-img {
   transform: scale(1.2);
 }
-.products-wrapper .products section a article figure {
+.products-wrapper .products section a article .wrapper-img {
   transition-duration: 1s;
   width: 150px;
   height: 150px;
   margin: 0 auto;
 }
-.products-wrapper .products section a article figure img {
+.products-wrapper .products section a article .wrapper-img img {
   width: auto;
 }
 .products-wrapper .products section a article h3 {
@@ -404,12 +405,12 @@ footer .grid .grid-area.socials .logo {
   height: auto;
   margin-bottom: 45px;
 }
-footer .grid .grid-area.socials .logo figure {
+footer .grid .grid-area.socials .logo .wrapper-img {
   transform: rotate(-10deg);
   width: 100%;
   height: auto;
 }
-footer .grid .grid-area.socials .logo figure img {
+footer .grid .grid-area.socials .logo .wrapper-img img {
   height: auto;
 }
 footer .grid .grid-area.socials p {
@@ -548,14 +549,14 @@ body {
   overflow-x: hidden;
 }
 
-figure {
+.wrapper-img {
   margin: 0;
   padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-figure img {
+.wrapper-img img {
   margin: 0;
   padding: 0;
   width: 100%;
