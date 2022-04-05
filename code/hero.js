@@ -4,6 +4,8 @@ const dot_1 = document.querySelector (".dot-wrapper:nth-child(1)")
 const dot_2 = document.querySelector (".dot-wrapper:nth-child(2)")
 const dot_3 = document.querySelector (".dot-wrapper:nth-child(3)")
 const cover_bg = document.querySelector (".cover > .background")
+const slider = document.querySelector (".cover")
+
 var cover_imgs = document.querySelectorAll (".cover > .background img")
 var cover_texts = document.querySelectorAll (".cover > .text p")
 var dots = document.querySelectorAll (".dot-wrapper > .dot")
@@ -56,6 +58,9 @@ function change_elems () {
     // Show current dots
     active_dot = dots[current_image - 1]
     active_dot.classList.add ("active")
+
+    // Update area label
+    slider.setAttribute ("aria-valuenow", current_image)
 }
 
 function change_text () {
