@@ -458,7 +458,6 @@ footer .grid .grid-area.form form input {
   text-align: center;
   padding: 15px;
   border: none;
-  outline: none;
   margin: 0;
 }
 footer .grid .grid-area.form form input[type=submit] {
@@ -469,9 +468,6 @@ footer .grid .grid-area.form form input[type=submit] {
 }
 footer .grid .grid-area.form form input[type=submit]:hover {
   box-shadow: 4px 4px 10px #161616;
-}
-footer .grid .grid-area.form form input:focus {
-  border: 4px solid rgba(0, 0, 255, 0.5);
 }
 footer .grid .grid-area.form hr {
   opacity: 0.5;
@@ -597,6 +593,20 @@ p.small {
 
 .svg_elem path {
   fill: #9c7841;
+}
+
+.skip-to-content-link {
+  background: #000000;
+  color: #ffffff;
+  height: 30px;
+  left: 50%;
+  padding: 8px;
+  position: absolute;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+}
+.skip-to-content-link:focus {
+  transform: translateY(0%);
 }
 
 /*# sourceMappingURL=styles.css.map */

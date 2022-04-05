@@ -18,6 +18,10 @@
 </head>
 
 <body>
+    <a class="skip-to-content-link" href="#main" class="focus-visible">
+        Skip to content
+    </a>
+
     <svg style="display: none;">
         <symbol id="svg-love" class="svg_elem" viewBox="0 0 24 24">
             <path d="M18 1l-6 4-6-4-6 5v7l12 10 12-10v-7z">
@@ -101,15 +105,15 @@
         </div>
     </header>
 
-    <main>
+    <main id="main">
         <section class="hero" role="slider">
             <div class="wrapper-back arrow" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">
-                <button tabindex="0" class="wrapper-img">
+                <button tabindex="0" class="wrapper-img" aria-label="go to last slide">
                     <img src="./imgs/arrow.svg" alt="back button icon">
                 </button>
             </div>
             <div class="wrapper-next arrow" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000">
-                <button tabindex="0" class="wrapper-img">
+                <button tabindex="0" class="wrapper-img" aria-label="go to next slide">
                     <img src="./imgs/arrow.svg" alt="next button icon">
                 </button>
             </div>
@@ -358,8 +362,8 @@
             <div class="form grid-area">
                 <p>JOIN TO CLUB</p>
                 <form action="index.html">
-                    <input type="email" placeholder="Email address" required>
-                    <input type="submit" value="Join">
+                    <input type="email" placeholder="Email address" aria-label="email" required>
+                    <input type="submit" value="Join" aria-label="submit email">
                 </form>
                 <hr>
                 <p>Contac us:  <a href="tel:+524493683735">449 368 37 35</a></p>
@@ -388,8 +392,6 @@
         </address>
     </footer>
     <script src="code/hero.js"></script>
-    <script src="code/inert.js"></script>
-    <script src="code/accessibility.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
