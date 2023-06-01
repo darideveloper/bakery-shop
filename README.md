@@ -45,22 +45,22 @@ Project type: **personal's project**
 
 # Details
 
-Landing page created for practice HMLT,5 CSS3 and Javascript. The page includes the following sections: \r
-\r
-* Header\r
-* Hero (slider)\r
-* We design dilicious\r
-* Baked fresh simply delicious\r
-* Teste of romance\r
-* Contact\r
+Landing page created for practice HMLT,5 CSS3 and Javascript. The page includes the following sections: 
+
+* Header
+* Hero (slider)
+* We design dilicious
+* Baked fresh simply delicious
+* Teste of romance
+* Contact
 * Footer
 
 # Roadmap
 
-* [X] Layout\r
-* [X] Slider\r
-* [X] Animations on scroll\r
-* [X] Hover animations\r
+* [X] Layout
+* [X] Slider
+* [X] Animations on scroll
+* [X] Hover animations
 * [ ] Responsive
 
 
